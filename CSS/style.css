@@ -1,0 +1,440 @@
+@font-face {
+  font-family: 'SpaceMono-Bold';
+  src: url(../policies/Space_Mono/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'SpaceMono-Regular';
+  src: url(../policies/Space_Mono/SpaceMono-Regular.ttf);
+}
+
+.opacity {
+  opacity: 0.7;
+}
+
+.noResults {
+  color: #F74646;
+  position: absolute;
+  z-index: 1;
+  top: 33%;
+  left: 58%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #141D2F;
+  color: white;
+  font-family: 'SpaceMono-Regular', sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 80%;
+  max-width: 80%;
+  max-height: 100%;
+}
+
+header {
+  max-width: 80%;
+  min-width: 80%;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    max-width: 95%;
+    min-width: 95%;
+  }
+}
+
+header .headAndNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1E2A47;
+  border-radius: 0.7rem;
+}
+
+header form i {
+  color: #0079FF;
+  margin-right: -1rem;
+  position: relative;
+  top: 0.2rem;
+  background-color: #1E2A47;
+  padding: 1.2rem;
+  border-radius: 0.7rem 0rem 0rem 0.7rem;
+}
+
+header form #searchInput {
+  font-family: 'SpaceMono-Regular', sans-serif;
+  min-width: 80%;
+  padding: 1.5rem;
+  background-color: #1E2A47;
+  border: none;
+  color: white;
+}
+
+header form #searchInput::-webkit-input-placeholder {
+  color: white;
+}
+
+header form #searchInput:-ms-input-placeholder {
+  color: white;
+}
+
+header form #searchInput::-ms-input-placeholder {
+  color: white;
+}
+
+header form #searchInput::placeholder {
+  color: white;
+}
+
+header form #searchButton {
+  min-width: 10%;
+  background-color: #0079FF;
+  font-family: 'SpaceMono-Regular', sans-serif;
+  border: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-family: 'SpaceMono-Bold', sans-serif;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-family: 'SpaceMono-Bold', sans-serif;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+#githubProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #1E2A47;
+  min-width: 80%;
+  max-width: 80%;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  #githubProfile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 95%;
+    max-width: 95%;
+  }
+}
+
+.githubUserImg {
+  min-width: 30%;
+  max-width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .githubUserImg {
+    margin-top: 2rem;
+  }
+}
+
+.githubUserImg .githubIcon {
+  border-radius: 300px;
+  min-width: 10rem;
+  min-height: 10rem;
+}
+
+.githubUser {
+  min-width: 70%;
+  max-width: 70%;
+}
+
+@media (max-width: 768px) {
+  .githubUser {
+    max-width: 100%;
+    min-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1.5rem;
+  }
+}
+
+.githubUser .githubUserLogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .githubUser .githubUserLogin {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-right: 1.5rem;
+  }
+}
+
+.githubUser .githubUserLogin__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.githubUser .githubUserLogin__text .githubSubname {
+  margin-top: -2rem;
+  font-size: 1.6rem;
+  color: #0079FF;
+}
+
+.githubUser .githubUserLogin__text .githubUserdescription {
+  margin-top: 0rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.githubUser .githubUserLogin .githubJoindate {
+  margin-top: 3rem;
+  margin-right: 3rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .githubUser .githubUserLogin .githubJoindate {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.githubUser .githubStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 95%;
+  background-color: #141D2F;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .githubUser .githubStats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.githubUser .githubStats__statsContainer {
+  position: relative;
+  right: 4%;
+}
+
+@media (max-width: 768px) {
+  .githubUser .githubStats__statsContainer {
+    right: 0%;
+  }
+}
+
+.githubUser .githubStats__statsContainer .statTitle {
+  font-family: 'SpaceMono-Regular', sans-serif;
+  font-weight: lighter;
+}
+
+.githubUser .githubStats__statsContainer span {
+  font-family: 'SpaceMono-Bold', sans-serif;
+  position: relative;
+  bottom: 1rem;
+}
+
+.githubUser .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .githubUser .links {
+    margin-bottom: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.githubUser .links .linksList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .githubUser .links .linksList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+}
+
+.githubUser .links .linksList .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .githubUser .links .linksList .link {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.githubUser .links .linksList .link i {
+  margin-right: 1.5rem;
+}
+
+.githubUser .links .linksList .link a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
